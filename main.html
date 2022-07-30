@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egzamino užduotis</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+    
+    
+</head>
+<body>
+
+  
+  <h2 id="fn"></h2>
+  
+
+  <h1  id="paslepti" class="underline" >Apie tinklalapį</h1>
+    <p id="nera" class="melynasTekstas">Tinklalapis yra skirtas išsisaugoti savo arba kitų sukurtus receptus </p>
+
+    <div >
+        <label  for="username"  class="pavadinimasMelynas" >Pavadinimas: </label>
+        <input   id="pirmasLaukelis" type="text" name="username" >
+      </div>
+      <div>
+        <label for="username">Ingridentai:  </label>
+        <input class="pasvires-raudonas-tekstas" id="antrasLaukelis" type="text" name="username">
+      </div>
+      <div>
+        <label for="username">Nurodymai: </label>
+        <input class="padidintas-langelis"  id="treciasLaukelis" type="text" name="username">
+      </div>
+      
+       
+        <input id="knopke" type="button" class="mygtukas" value="Spausti Cia">
+        
+      </div>
+
+      <style>
+        #more,#less{background-color: white;border: 0;padding: 5px 10px;color:blue;border: #F0F0F0 1px solid;}
+        #option-list{border-left:#F0F0F0 4px solid;padding-left:15px;}
+        #option-list p,#more-options p{border-bottom:#F0F0F0 1px dotted;}
+        </style>
+       
+
+       <style>
+        form p {
+            margin-bottom: 20px;
+        }
+        form label {
+            position: relative;
+        }
+        .errorMsg {
+            position: absolute;
+            left: 0;
+            top: 40px;
+            width: 200px;
+            color: red;
+            font-size: 12px;
+            font-style: italic;
+        }
+    </style>
+   <form name="frm">
+    Question: <input name="question"/> <br />
+    <input id="insert" onclick="return IsEmpty();" type="submit" value="Add Question"/>
+  </form>
+
+
+    <body>
+      
+    
+
+      
+      
+       
+      
+
+
+
+     
