@@ -4,17 +4,17 @@ let teksto2IvedimoLaukelis= document.getElementById("antrasLaukelis");
 let teksto3IvedimoLaukelis =document.getElementById("treciasLaukelis")
 let mygtukas = document.getElementById("knopke");
 mygtukas.onclick= function(){
-    tekstoIvedimoLaukelis.style.backgroundColor="green"
+   // tekstoIvedimoLaukelis.style.backgroundColor="green"
+   arYraTusciuLaukeliu(tekstoIvedimoLaukelis,teksto2IvedimoLaukelis,teksto3IvedimoLaukelis);
+   console.log(33);
 
 }
 let paslepti =document.getElementById("paslepti");
 let nera=document.getElementById("nera");
-//let pastraipa = document.getElementById("paslepti");
-//pastraipa.onclick =function(){
-   // pastraipa.style.display = "default";
+
    paslepti.onclick=function(){
     togglePaslepti(nera);
-    console.log(  aass  );
+    
 
    }
 
@@ -26,52 +26,41 @@ let nera=document.getElementById("nera");
         nera.style.display= "initial"
     }
    }
-   // togglePaslepti(nera);
-
-//}
-
-//function togglePaslepti(pastraipa){
-//if(pastraipa.style.display != "none"){
-    //pastraipa.style.display = "none";
-//}
-//else{
-  // pastraipa.style.display= "initial";
-  //  }
-}
-
- function nuskaitiLaukeliTrys(treciasLaukelis){
-    let teksto3IvedimoLaukelis = document.getElementById(treciasLaukelis);
-    return nuskaitiLaukeliTrys.document.getElementsByName("searchTxt")["a"].value;
-    
-
-
-
- }
-function IsEmpty(){
-    
-    if(document.forms['frm'].question.value === "")
-    {
-      alert("empty");
-      return ;
+   
+   function arTusciasLaukelis(laukelis){
+     if (laukelis.value = "") {
+      laukelis.value = ""
+       return true;}
+       else{
+        return false;
+       }
+       
+       
+      }
+   function arYraTusciuLaukeliu(pirmasLaukelis,antrasLaukelis,treciasLaukelis){
+   if (arTusciasLaukelis(pirmasLaukelis)) {
+    alert(  "Tuscias langelis");
+   }else if (arTusciasLaukelis(antrasLaukelis)) {
+      alert("Tuscias  laukelis")
+    } else if (arTusciasLaukelis(treciasLaukelis)) {
+        alert('Tuscias langelis')
+        
+      }
+      
     }
-      return true;
-  }
+    
+    
+   }
+   
+   
 
-  $('document').ready(function() {
-    $('#button').on('click', function() {
-      $('.pirmas.rfield').each(function() {
-        if ($(this).val() != '') {
-          console.log(32);
-          // Если поле не пустое удаляем класс-указание
-          $(this).removeClass('empty_field');
-        } else {
-          console.log(33);
-          // Если поле пустое добавляем класс-указание
-          $(this).addClass('empty_field');
-        }
-      });
-    });
-  });
+
+ 
+
+
+
+ 
+
 
 
 
