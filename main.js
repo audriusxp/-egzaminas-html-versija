@@ -6,6 +6,7 @@ let mygtukas = document.getElementById("knopke");
 
 
 
+
 mygtukas.onclick= function(){
    tekstoIvedimoLaukelis.style.backgroundColor="green";
   
@@ -13,6 +14,8 @@ mygtukas.onclick= function(){
    
    arTusciasLaukelis(laukelis);
    console.log(33);
+   kiekYraRaidziuA(teksto3IvedimoLaukelis);
+   console.log(kiekYraRaidziuA);
 
 }
 let paslepti =document.getElementById("paslepti");
@@ -56,8 +59,31 @@ let nera=document.getElementById("nera");
       
     }
     
+   // function kiekYraRaidziuA(teksto3IvedimoLaukelis){
+      
+    // for (i = 0; i < teksto3IvedimoLaukelis.length; i++) {
+      
+      //  if (teksto3IvedimoLaukelis["a"]) {
+        //  let suma =0;
+          //suma +=1;
+          
+  //}
+  //console.log(22);
+
+
+ function kiekYraRaidziuA(teksto3IvedimoLaukelis) {
+ let suma = 0;
+for( i = 0; i < teksto3IvedimoLaukelis.length; i ++){
+    if(teksto3IvedimoLaukelis[i] == "a") suma ++;
+}
+alert("suma = " + number);
     
    }
+  }
+  
+
+
+  
   
    
    
@@ -80,4 +106,3 @@ let nera=document.getElementById("nera");
        
        
            
-    
