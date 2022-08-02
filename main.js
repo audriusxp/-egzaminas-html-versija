@@ -1,11 +1,17 @@
 window.onload = function(){
 let tekstoIvedimoLaukelis = document.getElementById("pirmasLaukelis");
 let teksto2IvedimoLaukelis= document.getElementById("antrasLaukelis");
-let teksto3IvedimoLaukelis =document.getElementById("treciasLaukelis")
+let teksto3IvedimoLaukelis =document.getElementById("treciasLaukelis");
 let mygtukas = document.getElementById("knopke");
+
+
+
 mygtukas.onclick= function(){
-   // tekstoIvedimoLaukelis.style.backgroundColor="green"
+   tekstoIvedimoLaukelis.style.backgroundColor="green";
+  
    arYraTusciuLaukeliu(tekstoIvedimoLaukelis,teksto2IvedimoLaukelis,teksto3IvedimoLaukelis);
+   
+   arTusciasLaukelis(laukelis);
    console.log(33);
 
 }
@@ -28,8 +34,8 @@ let nera=document.getElementById("nera");
    }
    
    function arTusciasLaukelis(laukelis){
-     if (laukelis.value = "") {
-      laukelis.value = ""
+     if (laukelis.value == "") {
+      laukelis.value == ""
        return true;}
        else{
         return false;
@@ -37,20 +43,22 @@ let nera=document.getElementById("nera");
        
        
       }
-   function arYraTusciuLaukeliu(pirmasLaukelis,antrasLaukelis,treciasLaukelis){
-   if (arTusciasLaukelis(pirmasLaukelis)) {
+   function arYraTusciuLaukeliu(laukelis1,laukelis2,laukelis3){
+   if (arTusciasLaukelis(laukelis1)) {
     alert(  "Tuscias langelis");
-   }else if (arTusciasLaukelis(antrasLaukelis)) {
+   }else if (arTusciasLaukelis(laukelis2)) {
       alert("Tuscias  laukelis")
-    } else if (arTusciasLaukelis(treciasLaukelis)) {
-        alert('Tuscias langelis')
+    } else if (arTusciasLaukelis(laukelis3)) {
+        alert("Tuscias langelis")
         
       }
+      console.log(344);
       
     }
     
     
    }
+  
    
    
 
